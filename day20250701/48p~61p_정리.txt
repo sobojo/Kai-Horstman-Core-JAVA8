@@ -1,0 +1,17 @@
+자바에서의 문자는
+    문자열("test") - 코드 유닛 (U+00...) - 코드포인트 ([54620,44544]) 로 변경이 가능
+
+Shell 재지정 문법 정리
+0 - 표준 입력
+1 - 표준 출력
+2 - 표준 에러 출력
+
+echo "Hello" > out.txt ----- out.txt에 Hello 작성
+echo "World" >> out.txt ----- out.txt에 World 추가 작성
+
+cat < input.txt ----- input.txt의 내용을 표준 출력
+command << test ----- text가 입력되기 전까지 command에 계속 출력
+grep foo <<< "foo test rrrrr" ----- "foo test rrrrr" 문자열 안에 foo가 있으면 출력
+
+
+------> 위의 재지정 문법으로 InOut.class 파일 실행 가능

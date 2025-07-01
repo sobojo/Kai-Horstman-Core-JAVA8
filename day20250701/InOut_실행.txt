@@ -1,0 +1,5 @@
+javac -encoding UTF-8 day20250701/InOut.java
+- 컴파일
+
+java day20250701.InOut < day20250701/input.txt > day20250701/output.txt
+- Shell 재지정 문법으로 입출력 지정

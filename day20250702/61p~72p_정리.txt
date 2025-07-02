@@ -1,0 +1,19 @@
+Wrapper 객체를 비교할 때는 equals 사용
+    - Integer의 경우 128, 1000, 9999의 경우 값이 같아도 == 는 다르다고 나옴 (ArrayTest.java 38 line)
+
+향상된 for문 까먹지 말고 쓰자
+    - for(String text: texts) {}
+
+'=' 는 얕은 복사를 함
+    - 참조를 복사함으로 만약 원본을 유지해야하는 경우는 copy
+    - Apache Commons - SerializationUtils
+
+대용량 배열 & ArrayList를 위한 병렬 처리
+    int[] test -> Arrays.parallelSort(test)
+    ArrayList test -> test.parallelStream().sorted();
+
+main 메소드의 명령줄 인자 실행 -> java day20250702.Args (-g ksdjklrr sldkjflksdjfklds) <- 괄호 안의 값이 명령줄 인자로 넘어감
+    - 실행 결과
+        -g
+        ksdjklrr
+        sldkjflksdjfklds
